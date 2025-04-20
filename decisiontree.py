@@ -41,4 +41,4 @@ plot_tree(clf,
 
 plt.title("Decision Tree View")
 plt.show()
-plt.savefig("decision_tree.png")
+plt.savefig("decision_tree.png", dpi=300, bbox_inches='tight')
