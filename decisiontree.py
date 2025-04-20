@@ -5,7 +5,7 @@ from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 # Load the smaller dataset
-file_path = r"C:\Users\abhin\OneDrive\Desktop\Prodigy infotech\task 2\bank.csv"
+file_path = r"C:\Users\abhin\OneDrive\Desktop\Prodigy infotech\task 3\bank.csv"
 data = pd.read_csv(file_path, sep=';')
 
 # One-hot encode categorical features
@@ -37,7 +37,7 @@ plot_tree(clf,
           class_names=["No", "Yes"], 
           filled=True, 
           fontsize=9, 
-          max_depth=5)  # Try 5 instead of 3
+          max_depth=5) 
 
 plt.title("Decision Tree View")
 plt.show()
